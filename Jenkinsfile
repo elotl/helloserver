@@ -10,11 +10,6 @@ metadata:
     kubernetes.io/target-runtime: kiyot
 spec:
   containers:
-  - name: maven
-    image: maven:alpine
-    command:
-    - cat
-    tty: true
   - name: golang
     image: golang:1.12
     command:
