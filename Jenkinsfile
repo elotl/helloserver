@@ -22,7 +22,7 @@ spec:
     stage('Build helloserver') {
       steps {
         container('golang') {
-          sh 'mkdir -p /go/src/github.com/elotl; ln -s `pwd` /go/src/github.com/elotl/helloserver; cd /go/src/github.com/elotl/helloserver && sleep 300 && go build'
+          sh 'mkdir -p /go/src/github.com/elotl; ln -s `pwd` /go/src/github.com/elotl/helloserver; cd /go/src/github.com/elotl/helloserver && go build'
         }
       }
     }
