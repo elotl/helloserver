@@ -8,8 +8,6 @@ kind: Pod
 metadata:
   annotations:
     kubernetes.io/target-runtime: kiyot
-  labels:
-    kubernetes.io/target-runtime: kiyot
 spec:
   containers:
   - name: maven
